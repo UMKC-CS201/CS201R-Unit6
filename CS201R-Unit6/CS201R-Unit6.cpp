@@ -1,6 +1,6 @@
 // CS201Unit6a.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-// These examples make up Program 9: Pointer Practice
+// These examples make up Unit 6: Pointer Practice
 //
 
 #include <iostream>
