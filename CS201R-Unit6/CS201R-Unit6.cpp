@@ -8,7 +8,7 @@
 
 int main()
 {
-    example1();       //basic use of pointers * and &
+    //example1();       //basic use of pointers * and &
     //example2();     //basic use of pointers
     //example3();     //use of new & delete
     //example3a();    //math using pointers only
@@ -16,7 +16,7 @@ int main()
 
     //pointers & functions
     //example4();     // demonstrates functions using pointers (by value) 
-    //example5();     // demonstrates functions using pointers (by value) 
+    example5();     // demonstrates functions using pointers (by value) 
     //example6();     // demonstrates functions using pointers (by reference) 
     //example7();     // dynamic arrays
 

@@ -57,6 +57,8 @@ void example3() {
 
 	*p1 = 10;
 	*p2 = 20;
+	int* p3 = new int(80);
+
 	cout << "*p1 = " << *p1 << " *p2 = " << *p2 << " //accessing values by their pointer only" << endl;
 	delete p1;
 	p1 = p2;
@@ -121,6 +123,7 @@ void test5(int* v) {
 	v = new int(*v + 100);
 	*v = *v + 5;
 	cout << setw(20) << "Test 5 &v: " << &v << "\t  v: " << v << "\t *v: " << *v << endl;
+	
 }
 
 void example5() {
@@ -172,32 +175,52 @@ void example7() {
 	cout << "\n*** EXAMPLE 7 ***\n";
 	// demonstrates dynamic arrays
 	int* x = nullptr;
-	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	int arr[10] = { 21,22,23,24,25,26,27,28,29,30 };
 
 	x = arr;
 
+	cout << "Printing Array (Pointer)\n";
 	for (int i = 0; i < 10; i++)
 		cout << x[i] << '\t';
-	cout << endl;
+	cout << endl << endl;
 
+	cout << "Editing & Printing Array (Pointer)\n";
 	for (int i = 0; i < 10; i++) {
-		arr[i] = arr[i] + 10;
-		cout << arr[i] << '\t';
+		x[i] = arr[i] + 10;
+		cout << x[i] << '\t';
 	}
 	cout << endl << endl;
 
 	// this is demonstrating that you can set the size of a 
-	  // dynamic array while the program runs
+	// dynamic array while the program runs
 	int* newArr;
 	int arrSize;
 	cout << "Enter array size: ";
 	cin >> arrSize;
 	newArr = new int[arrSize];
+
+	cout << "Print New Dynamic Array: \n";
 	for (int i = 0; i < arrSize; i++) {
 		newArr[i] = i * 10;
 		cout << newArr[i] << '\t';
 	}
+
+	cout << "\n\nCreate a New Dynamic Array (2x)\n";
+	int count = arrSize;
+	int newSize = 2*count;
+	int* newArr2 = new int[newSize];
+
+	for (int i = 0; i < newSize; i++) {
+		if (i < count)
+			newArr2[i] = newArr[i];
+		else
+			newArr2[i] = i * 5;
+	}
 	delete[] newArr;
+	newArr = newArr2;
+	for (int i = 0; i < newSize; i++) {
+		cout << newArr[i] << '\t';
+	}
 	cout << endl << endl;
 }
 
