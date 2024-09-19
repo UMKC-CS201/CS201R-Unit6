@@ -3,5 +3,5 @@
 #include <string>
 using namespace std;
 
-void example1();
-void example2();
+void example1b();
+void example2b();

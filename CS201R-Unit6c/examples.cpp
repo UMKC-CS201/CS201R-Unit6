@@ -21,7 +21,7 @@ void reSize(int* &arr, int &size) {
 	arr = newArr2;
 }
 
-void example1() {
+void example1b() {
 
 	cout << "\n*** EXAMPLE 1 ***\n";
 	// demonstrates dynamic arrays
@@ -65,7 +65,7 @@ void example1() {
 
 }
 
-void example2() {
+void example2b() {
 
 	cout << "\n*** EXAMPLE 2 ***\n";
 	// read 'person' information & create a vector to print

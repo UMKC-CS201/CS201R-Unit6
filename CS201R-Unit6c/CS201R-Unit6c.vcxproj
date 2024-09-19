@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="CS201R-Unit6c.cpp" />
     <ClCompile Include="examples.cpp" />
+    <ClCompile Include="examples1.cpp" />
     <ClCompile Include="functions.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="examples.h" />
+    <ClInclude Include="examples1.h" />
     <ClInclude Include="functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
