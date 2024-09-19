@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4635f057-a9ce-46d3-972d-3a1ab78881ed}</ProjectGuid>
-    <RootNamespace>CS201RUnit6b</RootNamespace>
+    <ProjectGuid>{7610894e-8ccb-452a-bd78-b41dd6987582}</ProjectGuid>
+    <RootNamespace>CS201RUnit6c</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,16 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CS201R-Unit6b.cpp" />
+    <ClCompile Include="CS201R-Unit6c.cpp" />
     <ClCompile Include="examples.cpp" />
     <ClCompile Include="functions.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="examples.h" />
-    <ClInclude Include="functions.h" />
+    <Text Include="data.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data.txt" />
+    <ClInclude Include="examples.h" />
+    <ClInclude Include="functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

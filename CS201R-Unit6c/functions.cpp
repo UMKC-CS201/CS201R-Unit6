@@ -36,6 +36,7 @@ int readFile(vector<Person>& people) {
 			tempP.lname = tokens[1];
 			tempP.fname = tokens[2];
 			tempP.age = stoi(tokens[3]);
+
 			// if valid, push the person onto the vector
 			people.push_back(tempP);
 		}
@@ -45,4 +46,8 @@ int readFile(vector<Person>& people) {
 	}
 	inFile.close();
 	return 0;
+}
+
+void printVector(vector<Person> p) {
+	cout << "WRITE THIS\n";
 }
