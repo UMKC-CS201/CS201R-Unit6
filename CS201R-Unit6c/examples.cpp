@@ -71,7 +71,7 @@ void example2b() {
 	cout << "\n*** EXAMPLE 2 ***\n";
 	// read 'person' information & create a vector to print;
 
-	vector <Person> people;
+	vector <Person*> people;
 	readFile(people);
 	printVector(people);
 }

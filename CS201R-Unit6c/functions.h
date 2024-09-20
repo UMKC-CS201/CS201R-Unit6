@@ -11,5 +11,5 @@ struct Person {
 	string fname;
 	int age;
 };
-int readFile(vector<Person>& p);
-void printVector(vector<Person> p);
+int readFile(vector<Person*>& p);
+void printVector(vector<Person*> p);

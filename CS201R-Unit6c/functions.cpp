@@ -1,7 +1,8 @@
 #include "functions.h"
 
-int readFile(vector<Person>& people) {
-
+int readFile(vector<Person*>& people) {
+	//https://github.com/UMKC-CS201/CS201R-Unit6
+	// 
 	//OPEN THE INPUT FILE
 	ifstream inFile;
 	inFile.open("data.txt");
@@ -32,10 +33,10 @@ int readFile(vector<Person>& people) {
 		// where lastname row[1], firstname row[2] and age
 		// convert the string 'age' to an integer
 		try {
-			Person tempP;
-			tempP.lname = tokens[1];
-			tempP.fname = tokens[2];
-			tempP.age = stoi(tokens[3]);
+			Person* tempP = new Person;
+			tempP->lname = tokens[1];
+			tempP->fname = tokens[2];
+			tempP->age = stoi(tokens[3]);
 
 			// if valid, push the person onto the vector
 			people.push_back(tempP);
@@ -48,7 +49,7 @@ int readFile(vector<Person>& people) {
 	return 0;
 }
 
-void printVector(vector<Person> p) {
+void printVector(vector<Person*> p) {
 	for (auto i : p)
-		cout << i.fname << " " << i.lname << " " << i.age << endl;
+		cout << i->fname << " " << i->lname << " " << i->age << endl;
 }
