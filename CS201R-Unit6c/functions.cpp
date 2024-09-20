@@ -4,7 +4,7 @@ int readFile(vector<Person>& people) {
 
 	//OPEN THE INPUT FILE
 	ifstream inFile;
-	inFile.open("people.txt");
+	inFile.open("data.txt");
 	if (!inFile.is_open()) {
 		cout << "File is not open" << endl;
 		return 1;
@@ -49,5 +49,6 @@ int readFile(vector<Person>& people) {
 }
 
 void printVector(vector<Person> p) {
-	cout << "WRITE THIS\n";
+	for (auto i : p)
+		cout << i.fname << " " << i.lname << " " << i.age << endl;
 }

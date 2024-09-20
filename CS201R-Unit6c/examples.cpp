@@ -1,4 +1,5 @@
 #include "examples.h"
+#include "functions.h"
 
 bool numberEntered(string str) {
 	return str.find_first_not_of("0123456789") == string::npos;
@@ -68,6 +69,9 @@ void example1b() {
 void example2b() {
 
 	cout << "\n*** EXAMPLE 2 ***\n";
-	// read 'person' information & create a vector to print
+	// read 'person' information & create a vector to print;
 
+	vector <Person> people;
+	readFile(people);
+	printVector(people);
 }
