@@ -7,13 +7,14 @@ void example1() {
 	int a = 10;
 	int b = 20;
 	int* a1, * b1;    //pointers to 2 integers
-	a1 = &a;          //pointers are set to the address of a & b
+	a1 = &a;          //pointers are set to the addresses of a & b
 	b1 = &b;
 	*a1 = b;          //dereference operator value of a1 is set to b
 	*b1 = 30;         //             and the value of b1 is set to 30
 
 	//value of the location at a & b  
 	cout << "a   = " << a << " and  b= " << b << endl;
+
 	//value of the location at a1 & b1 (value of a & b)
 	cout << "*a1 = " << *a1 << " and *b1= " << *b1 << endl;
 
@@ -80,6 +81,8 @@ void example3a() {
 	*d2 = 2.0;
 	cout << *d1 + *d2 << " //math using pointers" << endl;
 	delete d1, d2;
+	d1 = nullptr;
+	d2 = nullptr;
 }
 
 void example3b() {
@@ -91,6 +94,8 @@ void example3b() {
 	int* ptr2 = new int(50);
 
 	cout << *ptr1 + *ptr2 << endl;
+	delete ptr2;
+	ptr2 = nullptr;
 }
 
 void test4(int* v) {

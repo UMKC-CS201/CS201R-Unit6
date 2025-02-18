@@ -1,4 +1,4 @@
-#include "examples.h"
+#include "examples1.h"
 #include "functions.h"
 
 bool numberEntered(string str) {
@@ -22,9 +22,9 @@ void reSize(int* &arr, int &size) {
 	arr = newArr2;
 }
 
-void example1b() {
+void example2a() {
 
-	cout << "\n*** EXAMPLE 1 ***\n";
+	cout << "\n*** EXAMPLE 2a ***\n";
 	// demonstrates dynamic arrays
 	string tempStr;
 	int arrSize = 5, count = 0, value;
@@ -68,7 +68,7 @@ void example1b() {
 
 void example2b() {
 
-	cout << "\n*** EXAMPLE 2 ***\n";
+	cout << "\n*** EXAMPLE 2b ***\n";
 	// read 'person' information & create a vector to print;
 
 	vector <Person*> people;
